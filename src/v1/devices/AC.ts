@@ -46,15 +46,6 @@ export default class AC extends AirConditioner {
     this.platform.ThinQ?.thinq1DeviceControl(device, 'WindStrength', windStrength);
   }
 
-  async setJetModeActive(value: CharacteristicValue) {
-    const device: Device = this.accessory.context.device;
-
-    if (this.Status.isPowerOn && this.Status.opMode === 0) {
-      const jetModeValue = value ? '1' : '0';
-      await this.platform.ThinQ?.thinq1DeviceControl(device, 'Jet', jetModeValue);
-    }
-  }
-
   async setActive(value: CharacteristicValue) {
     const device: Device = this.accessory.context.device;
     const isOn = value as boolean;

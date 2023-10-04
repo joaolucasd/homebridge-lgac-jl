@@ -1,7 +1,7 @@
 {
   "displayName": "Homebridge LG AC JL",
   "name": "homebridge-lgac-jl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Homebridge plugin for controlling/monitoring LG ThinQ AC - JL tailored",
   "license": "Apache-2.0",
   "publishConfig": {
