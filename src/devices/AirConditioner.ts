@@ -56,7 +56,6 @@ export default class AirConditioner extends baseDevice {
         TemperatureSensor,
         HumiditySensor,
         Switch,
-        Lightbulb,
       },
     } = this.platform;
 
@@ -89,9 +88,9 @@ export default class AirConditioner extends baseDevice {
       this.serviceHumiditySensor = null;
     }
 
-    this.serviceLight = accessory.getService(Lightbulb);
+    this.serviceLight = accessory.getService(Switch);
     if (this.config.ac_led_control as boolean) {
-      this.serviceLight = this.serviceLight || accessory.addService(Lightbulb);
+      this.serviceLight = this.serviceLight || accessory.addService(Switch);
       this.serviceLight.getCharacteristic(platform.Characteristic.On)
         .onSet(this.setLight.bind(this))
         .updateValue(false); // off as default
