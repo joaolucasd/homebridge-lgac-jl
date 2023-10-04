@@ -1,18 +1,18 @@
 {
-  "displayName": "Homebridge LG ThinQ",
-  "name": "homebridge-lg-thinq",
-  "version": "1.6.0",
-  "description": "A Homebridge plugin for controlling/monitoring LG ThinQ device via LG ThinQ platform.",
+  "displayName": "Homebridge LG AC JL",
+  "name": "homebridge-lgac-jl",
+  "version": "0.0.1",
+  "description": "A Homebridge plugin for controlling/monitoring LG ThinQ AC - JL tailored",
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nVuln/homebridge-lg-thinq.git"
+    "url": "https://github.com/joaolucasd/homebridge-lgac-jl.git"
   },
   "bugs": {
-    "url": "https://github.com/nVuln/homebridge-lg-thinq/issues"
+    "url": "https://github.com/joaolucasd/homebridge-lgac-jl/issues"
   },
   "engines": {
     "node": ">=10.17.0",
@@ -45,7 +45,7 @@
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
-  "homepage": "https://github.com/nVuln/homebridge-lg-thinq#readme",
+  "homepage": "https://github.com/joaolucasd/homebridge-lgac-jl#readme",
   "author": "",
   "dependencies": {
     "@homebridge/plugin-ui-utils": "^0.0.19",
@@ -58,11 +58,5 @@
     "node-persist": "^0.0.11",
     "qs": "^6.10.1",
     "uuid": "^8.3.2"
-  },
-  "funding": [
-    {
-      "type": "paypal",
-      "url": "https://paypal.me/ndhan"
-    }
-  ]
+  }
 }
